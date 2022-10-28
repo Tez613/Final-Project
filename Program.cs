@@ -1,7 +1,9 @@
 ﻿int exit = 0;
 int playerPosition = 1;
+Console.OutputEncoding = System.Text.Encoding.Unicode;
 while (exit < 1)
 {
+    Console.SetCursorPosition(0, 0);
     var keyInfo = Console.ReadKey();
     switch (keyInfo.Key)
     {
@@ -22,46 +24,55 @@ while (exit < 1)
     }
     switch (playerPosition)
     {
+         case 0:
+            Console.Clear();
+            Console.Write('⯅');
+            break;
         case 1:
             Console.Clear();
-            Console.Write(@"/\");
+            Console.Write('⯅');
             break;
         case 2:
             Console.Clear();
-            Console.Write(@"|\");
+            Console.Write('◤');
             break;
         case 3:
             Console.Clear();
-            Console.Write("<");
+            Console.Write('⯇');
             break;
         case 4:
             Console.Clear();
-            Console.Write("|/");
+            Console.Write('◣');
             break;
         case 5:
             Console.Clear();
-            Console.Write(@"\/");
+            Console.Write('⯆');
             break;
         case 6:
             Console.Clear();
-            Console.Write(@"\|");
+            Console.Write('◢');
             break;
         case 7:
             Console.Clear();
-            Console.Write(">");
+            Console.Write("⯈");
             break;
         case 8:
             Console.Clear();
-            Console.Write("/|");
+            Console.Write("◥");
             break;
+        case 9:
+            Console.Clear();
+            Console.Write('⯅');
+            break;
+
     }
-    while (playerPosition > 8)
+    if (playerPosition == 9)
     {
         playerPosition = 1;
     }
-    while (playerPosition < 1)
+    else if (playerPosition == 1)
     {
-        playerPosition = 8;
+        playerPosition = 9;
     }
 }
 
