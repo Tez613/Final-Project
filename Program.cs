@@ -19,11 +19,17 @@ while (exit < 1)
             //Advances the game one frame
             break;
         case ConsoleKey.Spacebar:
-            //Shoots the weapon
+            //Shoots the weapon and plays a sound
+            Console.Beep();
+            break;
+        case ConsoleKey.Escape:
+            //Exits the game
+        exit++;
             break;
     }
     switch (playerPosition)
     {
+        //Each case should have a variable that advances the game one frame
          case 0:
             Console.Clear();
             Console.Write('⯅');
