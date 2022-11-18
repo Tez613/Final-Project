@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Beevers\\.nuget\\packages\\": {}
+    "C:\\Users\\tevis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Beevers\\source\\repos\\Final-Project\\Final-Project.csproj",
+      "projectUniqueName": "D:\\Source\\Repos\\C#\\Final-Project\\Final-Project\\Final-Project.csproj",
       "projectName": "Final-Project",
-      "projectPath": "C:\\Users\\Beevers\\source\\repos\\Final-Project\\Final-Project.csproj",
-      "packagesPath": "C:\\Users\\Beevers\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Beevers\\source\\repos\\Final-Project\\obj\\",
+      "projectPath": "D:\\Source\\Repos\\C#\\Final-Project\\Final-Project\\Final-Project.csproj",
+      "packagesPath": "C:\\Users\\tevis\\.nuget\\packages\\",
+      "outputPath": "D:\\Source\\Repos\\C#\\Final-Project\\Final-Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Beevers\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\tevis\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
