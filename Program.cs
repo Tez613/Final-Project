@@ -1,9 +1,23 @@
-﻿int exit = 0;
+﻿char [,] grid = new char [9,9];
+void draw()
+{
+
+for (int row = 0; row <grid.GetLength(1); row++)
+{
+    for(int column = 0; column <grid.GetLength(1);column++)
+        Console.Write(grid[row, column]+ "0");
+
+    Console.WriteLine();
+}
+}
+ 
+
+int exit = 0;
 int playerPosition = 1;
 Console.OutputEncoding = System.Text.Encoding.Unicode;
 while (exit < 1)
 {
-    Console.SetCursorPosition(0, 0);
+Console.Clear();
     var keyInfo = Console.ReadKey();
     switch (keyInfo.Key)
     {
@@ -25,47 +39,49 @@ while (exit < 1)
     switch (playerPosition)
     {
          case 0:
-            Console.Clear();
-            Console.Write('⯅');
+             Console.Clear();
+            
+            grid[5,5]= '⯅';
             break;
         case 1:
-            Console.Clear();
-            Console.Write('⯅');
+              Console.Clear();
+            grid[5,5]= '⯅';
             break;
         case 2:
-            Console.Clear();
-            Console.Write('◤');
+             Console.Clear();
+            grid[5,5]='◤';
             break;
         case 3:
-            Console.Clear();
-            Console.Write('⯇');
+             Console.Clear();
+            grid[5,5]= '⯇';
             break;
         case 4:
-            Console.Clear();
-            Console.Write('◣');
+             Console.Clear();
+            grid[5,5]= '◣';
             break;
         case 5:
-            Console.Clear();
-            Console.Write('⯆');
+             Console.Clear();
+            grid[5,5]= '⯆';
             break;
         case 6:
-            Console.Clear();
-            Console.Write('◢');
+             Console.Clear();
+            grid[5,5]= '◢';
             break;
         case 7:
-            Console.Clear();
-            Console.Write("⯈");
+             Console.Clear();
+            grid[5,5]= '⯈';
             break;
         case 8:
-            Console.Clear();
-            Console.Write("◥");
+             Console.Clear();
+            grid[5,5]= '◥';
             break;
         case 9:
-            Console.Clear();
-            Console.Write('⯅');
+             Console.Clear();
+            grid[5,5]= '⯅';
             break;
 
     }
+    //cycle through player position
     if (playerPosition == 9)
     {
         playerPosition = 1;
@@ -74,13 +90,6 @@ while (exit < 1)
     {
         playerPosition = 9;
     }
+    draw();
 }
 
-int [,] matrix = new int [9,9];
-for (int row = 0; row <matrix.GetLength(1); row++)
-{
-    for(int column = 0; column <matrix.GetLength(1);column++)
-        Console.Write(matrix[row, column]+ " ");
-
-    Console.WriteLine();
-}
