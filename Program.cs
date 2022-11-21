@@ -1,4 +1,4 @@
-﻿char[,] grid = new char[9, 9];
+﻿string[,] grid = new string[9, 9];
 void draw()
 {
 
@@ -50,6 +50,7 @@ while (exit < 1)
             break;
         case ConsoleKey.A:
             //Move the ship left
+            grid[yAxis, xAxis] ="  ";
             xAxis--;
             if (xAxis == -1)
             {
@@ -58,6 +59,7 @@ while (exit < 1)
             break;
         case ConsoleKey.D:
             //Move the ship right
+            grid[yAxis, xAxis] ="  ";
             xAxis++;
             if (xAxis == 9)
             {
@@ -66,6 +68,7 @@ while (exit < 1)
             break;
         case ConsoleKey.W:
             //Move the ship up
+            grid[yAxis, xAxis] ="  ";
             yAxis--;
             if (yAxis == -1)
             {
@@ -74,6 +77,7 @@ while (exit < 1)
             break;
         case ConsoleKey.S:
             //Move the ship down
+            grid[yAxis, xAxis] ="  ";
             yAxis++;
             if (yAxis == 9)
             {
@@ -85,39 +89,39 @@ while (exit < 1)
     {
         case 1:
             Console.Clear();
-            grid[yAxis, xAxis] = '⯅';
+            grid[yAxis, xAxis] = "⯅";
             break;
         case 2:
             Console.Clear();
-            grid[yAxis, xAxis] = '◤';
+            grid[yAxis, xAxis] = "◤";
             break;
         case 3:
             Console.Clear();
-            grid[yAxis, xAxis] = '⯇';
+            grid[yAxis, xAxis] = "⯇";
             break;
         case 4:
             Console.Clear();
-            grid[yAxis, xAxis] = '◣';
+            grid[yAxis, xAxis] = "◣";
             break;
         case 5:
             Console.Clear();
-            grid[yAxis, xAxis] = '⯆';
+            grid[yAxis, xAxis] = "⯆";
             break;
         case 6:
             Console.Clear();
-            grid[yAxis, xAxis] = '◢';
+            grid[yAxis, xAxis] = "◢";
             break;
         case 7:
             Console.Clear();
-            grid[yAxis, xAxis] = '⯈';
+            grid[yAxis, xAxis] = "⯈";
             break;
         case 8:
             Console.Clear();
-            grid[yAxis, xAxis] = '◥';
+            grid[yAxis, xAxis] = "◥";
             break;
         case 9:
             Console.Clear();
-            grid[yAxis, xAxis] = '⯅';
+            grid[yAxis, xAxis] = "⯅";
             break;
 
     }
