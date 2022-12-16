@@ -245,7 +245,7 @@ while (GameLoop < 1)
                     case ConsoleKey.LeftArrow:
                         //rotates ship to the left
                         playerPosition++;
-                        if (playerPosition == 8)
+                        if (playerPosition >= 8)
                         {
                             playerPosition = 1;
                         }
@@ -253,7 +253,7 @@ while (GameLoop < 1)
                     case ConsoleKey.RightArrow:
                         //rotates ship to the right
                         playerPosition--;
-                        if (playerPosition == 1)
+                        if (playerPosition <= 1)
                         {
                             playerPosition = 9;
                         }
@@ -812,7 +812,6 @@ while (GameLoop < 1)
                         Console.ReadKey();
                         exit = false;
                     }
-                    Console.WriteLine($"{Ast1X} + {Ast1Y} + {yAxis} + {xAxis} +{bullet1x}");
                     switch (Ast1Direction)
                     {
                         case 0:
